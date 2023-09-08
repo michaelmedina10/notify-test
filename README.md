@@ -11,3 +11,24 @@ Para instalar no macbook o ngrok, basta executar o comando: <br>
 Uma vez instalado, execute sua aplicação, por exemplo fastapi executa na porta 8000 com uvicorn.<br>
 Agora execute o ngrok na porta 8000, com o seguinte comando:<br>
 `ngrok http 8000`
+
+<hr>
+
+Para Configurar o WebHook do GitHub:
+
+- acesse seu repositório
+- Vá em configurações
+- WebHook
+- Adicionar WebHook
+- Coloque o endpoint de sua API
+- confirme a configuração
+
+WebHook criado: <br>
+![Alt text](image.png)
+
+Logo após a criação do webhook, o Github fará um ping para testar, clique em edit -> recent deliveries. Você irá ver o número de vezes que o hook enviou uma requisição para seu endpoint: <br>
+
+![Alt text](image-1.png)
+
+Clicando em um deles, será possível ver o status code da requisição: <br>
+![Alt text](image-2.png)
