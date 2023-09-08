@@ -32,3 +32,5 @@ Logo após a criação do webhook, o Github fará um ping para testar, clique em
 
 Clicando em um deles, será possível ver o status code da requisição: <br>
 ![Alt text](image-2.png)
+
+Obs: sempre que você interromper o servidor http gerado pelo ngrok e iniciá-lo novamente, um novo endereço será gerado, necessitando atualização do WebHook.
